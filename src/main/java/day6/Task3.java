@@ -10,5 +10,6 @@ public class Task3 {
         PetrIvanovich.setSubject("Физика");
         PetrIvanovich.evaluate(Nic);
 
+
     }
 }

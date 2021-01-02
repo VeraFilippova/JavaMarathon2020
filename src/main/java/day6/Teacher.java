@@ -16,11 +16,11 @@ public class Teacher {
     }
 
     void evaluate(Student student) {
-        int[] appraisalStudet = new int[1];
+        int appraisalStudet;
         Random numbers = new Random();
-        for (int i = 0; i < appraisalStudet.length; i++) {
-            appraisalStudet[i] = numbers.nextInt(4) + 2;
-            switch (appraisalStudet[i]) {
+
+            appraisalStudet = numbers.nextInt(4) + 2;
+            switch (appraisalStudet) {
                 case 2:
                     appraisal = "неудовлетворительно";
                     break;
@@ -33,7 +33,7 @@ public class Teacher {
                 case 5:
                     appraisal = "отлично";
                     break;
-            }
+
 
         }
         System.out.println("Преподаватель " + name + " оценил студента с именем " + student.getStudentname() + " по предмету " + subject + "  на оценку " + appraisal);
